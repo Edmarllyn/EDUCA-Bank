@@ -1,131 +1,272 @@
+/* Estilo global aplicável a todos os elementos */
 * {
-    margin: 0; 
-    box-sizing: border-box; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    list-style: none;
+    margin: 0; /* Remove a margem padrão dos elementos */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura e altura dos elementos */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define a fonte dos elementos */
+    list-style: none; /* Remove os marcadores padrão das listas */
 }
 
-body{
-    height: 100px;
+/* Estilo do corpo da página */
+body {
+    height: 100px; /* Define a altura do corpo da página como 100 pixels */
 }
 
-
-header{
-    padding: 50px;
-    background-color: rgb(78, 135, 168);;
+/* Estilo do cabeçalho */
+header {
+    padding: 50px; /* Adiciona um espaçamento interno de 50 pixels em todos os lados */
+    background-color: rgb(78, 135, 168); /* Define a cor de fundo do cabeçalho */
 }
 
-
-.topo-site nav ul{
-    
-    display: flex;
-    justify-content: end;
+/* Estilo do contêiner de navegação dentro do cabeçalho */
+.topo-site nav ul {
+    display: flex; /* Define um layout flexível para os itens da lista */
+    justify-content: end; /* Alinha os itens da lista ao final do contêiner */
 }
 
+/* Estilo dos links dentro da navegação do cabeçalho */
 header nav ul li a {
-    text-decoration: none;
-    margin-right: 50px;
-    font-size: 13px;
-    color: white;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin-right: 50px; /* Adiciona um espaço à direita de 50 pixels entre os links */
+    font-size: 13px; /* Define o tamanho da fonte dos links como 13 pixels */
+    color: white; /* Define a cor do texto dos links como branco */
 }
 
-.topo-site{
-    margin-left: 20px;
+/* Estilo do contêiner topo-site */
+.topo-site {
+    margin-left: 20px; /* Adiciona uma margem à esquerda de 20 pixels */
 }
 
-.topo-site a:hover{
-    transition: 0.3s;
-    color: rgb(81, 81, 228);
+/* Estilo dos links dentro de topo-site quando sobrevoados */
+.topo-site a:hover {
+    transition: 0.3s; /* Adiciona uma transição suave de 0,3 segundos para a mudança de estilo */
+    color: rgb(81, 81, 228); /* Muda a cor do texto para um tom de azul quando sobrevoado */
 }
 
-.section-01{
-    background: linear-gradient(180deg, #c0cdcf 8.33%, rgba(90, 168, 168) 100%); 
-    padding: 200px;  
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-
+/* Estilo da seção 01 */
+.section-01 {
+    background: linear-gradient(180deg, #c0cdcf 8.33%, rgba(90, 168, 168) 100%); /* Aplica um gradiente linear como fundo */
+    padding: 200px; /* Adiciona um espaçamento interno de 200 pixels em todos os lados */
+    background-repeat: no-repeat; /* Garante que o fundo não se repita */
+    background-size: cover; /* Faz o fundo cobrir completamente a área da seção */
 }
 
-
-
-.section-01 h1 { 
-    font-size: 30px;
-    color: rgb(0, 0, 0); 
+/* Estilo dos títulos h1 na seção 01 */
+.section-01 h1 {
+    font-size: 30px; /* Define o tamanho da fonte como 30 pixels */
+    color: rgb(0, 0, 0); /* Define a cor do texto como preto */
 }
 
-.section-01 p{
-    margin-top: 5px;
-    font-size: 25px;
+/* Estilo dos parágrafos na seção 01 */
+.section-01 p {
+    margin-top: 5px; /* Adiciona uma margem superior de 5 pixels */
+    font-size: 25px; /* Define o tamanho da fonte como 25 pixels */
 }
 
-
-
-
+/* Estilo dos botões na seção 01 */
 .section-01 button {
-    color: rgb(19, 153, 108);
-    border-color: rgb(19, 153, 108); 
-    padding: 10px 40px; 
-    font-size: 20px;
-    font-weight: 500; 
-    background-color:#ffffff; 
-    border: 0; 
-    border-radius: 40px; 
-    cursor: pointer; 
-    margin: 30px;
-    }
-
-.section-01 a button:hover{
-    color: white;
-    transition: 0.8s;
-    background-color: rgb(19, 153, 108);
-    border-color: white;
+    color: rgb(19, 153, 108); /* Define a cor do texto do botão */
+    border-color: rgb(19, 153, 108); /* Define a cor da borda do botão */
+    padding: 10px 40px; /* Define o preenchimento interno do botão */
+    font-size: 20px; /* Define o tamanho da fonte do texto no botão */
+    font-weight: 500; /* Define o peso da fonte como 500 */
+    background-color: #ffffff; /* Define a cor de fundo do botão como branco */
+    border: 0; /* Remove a borda padrão do botão */
+    border-radius: 40px; /* Adiciona bordas arredondadas com raio de 40 pixels */
+    cursor: pointer; /* Muda o cursor para uma mão quando o botão é sobrevoado */
+    margin: 30px; /* Adiciona uma margem de 30 pixels ao redor do botão */
 }
 
+/* Estilo dos botões dentro de links na seção 01 quando sobrevoados */
+.section-01 a button:hover {
+    color: white; /* Muda a cor do texto para branco */
+    transition: 0.8s; /* Adiciona uma transição suave de 0,8 segundos para a mudança de estilo */
+    background-color: rgb(19, 153, 108); /* Muda a cor de fundo para um tom de verde quando sobrevoado */
+    border-color: white; /* Muda a cor da borda para branco */
+}
 
-
-
+/* Estilo da seção 02 */
 .section-02 {
-    display: flex;
-    padding: 200px;
-    background-color:rgb(255, 255, 255);
-   justify-content: space-around;
-   
+    display: flex; /* Define um layout flexível para os filhos da seção */
+    padding: 200px; /* Adiciona um espaçamento interno de 200 pixels em todos os lados */
+    background-color: rgb(255, 255, 255); /* Define a cor de fundo como branco */
+    justify-content: space-around; /* Distribui o espaço entre e ao redor dos itens */
 }
 
-.section-02 .aplicativo a button{
-    color: rgb(255, 255, 255);
-    background-color:rgb(19, 153, 108);;
-    padding: 10px 40px; 
-    font-size: 16px; 
-    border-radius: 40px; 
-    cursor: pointer; 
-    margin: 30px;
+/* Estilo dos botões dentro de links na classe aplicativo da seção 02 */
+.section-02 .aplicativo a button {
+    color: rgb(255, 255, 255); /* Define a cor do texto como branco */
+    background-color: rgb(19, 153, 108); /* Define a cor de fundo do botão */
+    padding: 30px; /* Define o preenchimento interno do botão como 30 pixels */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
+    cursor: pointer; /* Muda o cursor para uma mão quando o botão é sobrevoado */
+    margin: 30px; /* Adiciona uma margem de 30 pixels ao redor do botão */
+    width: 300px; /* Define a largura do botão como 300 pixels */
+    border-radius: 30px; /* Adiciona bordas arredondadas com raio de 30 pixels */
 }
 
+/* Estilo dos botões dentro de links na classe aplicativo da seção 02 quando sobrevoados */
 .section-02 .aplicativo button:hover {
-    color: rgb(0, 0, 0);
-    background-color: ;
-    transition: 0,5;
-    background-color:rgb(40, 240, 173);;
+    color: rgb(0, 0, 0); /* Muda a cor do texto para preto */
+    transition: 0,5; /* Adiciona uma transição suave (note que o valor da transição está incorreto, deveria ser 0.5s) */
+    background-color: rgb(40, 240, 173); /* Muda a cor de fundo para um tom de verde claro */
 }
 
-
-.section-02 .aplicativo a{
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    border-color: rgb(95, 94, 94);
-    
+/* Estilo dos links dentro da classe aplicativo da seção 02 */
+.section-02 .aplicativo a {
+    color: rgb(0, 0, 0); /* Define a cor do texto como preto */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
+    border-color: rgb(95, 94, 94); /* Define a cor da borda dos links */
 }
 
+/* Estilo das imagens na seção 02 */
+.section-02 img {
+    width: 300px; /* Define a largura das imagens como 300 pixels */
+    height: 300px; /* Define a altura das imagens como 300 pixels */
+    margin-left: 20px; /* Adiciona uma margem à esquerda de 20 pixels */
+    margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+}
 
+/* Estilo da seção 03 */
+.section-03 {
+    padding: 180px; /* Adiciona um espaçamento interno de 180 pixels em todos os lados */
+    background-color: rgb(255, 255, 255); /* Define a cor de fundo como branco */
+}
 
-.section-02 a button {
-    color: rgb(19, 153, 108);
-    width: 250px;
-    padding: 40px;
-    border-radius: 30px;
-    margin: 30px;
-    cursor: pointer;
-    font-size: 16px;
+/* Estilo dos títulos h2 na seção 03 */
+.section-03 h2 {
+    font-size: 30px; /* Define o tamanho da fonte como 30 pixels */
+    margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+    color: black; /* Define a cor do texto como preto */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo dos parágrafos na seção 03 */
+.section-03 p {
+    font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
+    margin-top: 30px; /* Adiciona uma margem superior de 30 pixels */
+    color: rgba(0, 0, 0, 0.564); /* Define a cor do texto com opacidade */
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Estilo dos botões na seção 03 */
+.section-03 button {
+    color: rgb(50, 50, 226); /* Define a cor do texto do botão */
+    background-color: rgb(255, 255, 255); /* Define a cor de fundo do botão como branco */
+    border-color: rgb(50, 50, 226); /* Define a cor da borda do botão */
+    padding: 10px 40px; /* Define o preenchimento interno do botão */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
+    cursor: pointer; /* Muda o cursor para uma mão quando o botão é sobrevoado */
+    margin: 30px; /* Adiciona uma margem de 30 pixels ao redor do botão */
+    width: 200px; /* Define a largura do botão como 200 pixels */
+    border-radius: 30px; /* Adiciona bordas arredondadas com raio de 30 pixels */
+}
+
+/* Estilo dos botões na seção 03 quando sobrevoados */
+.section-03 button:hover {
+    background-color: rgb(50, 50, 226); /* Muda a cor de fundo para o mesmo tom de azul do texto */
+    color: white; /* Muda a cor do texto para branco */
+    border-color: white; /* Muda a cor da borda para branco */
+    transition: 0.7s; /* Adiciona uma transição suave de 0,7 segundos para a mudança de estilo */
+    cursor: pointer; /* Muda o cursor para uma mão quando o botão é sobrevoado */
+}
+
+/* Estilo de uma linha centralizada */
+.line {
+    margin: 0 auto; /* Centraliza a linha horizontalmente */
+    width: 70%; /* Define a largura da linha como 70% do contêiner pai */
+}
+
+/* Estilo das imagens na seção 03 */
+.section-03 img {
+    margin-left: 100px; /* Adiciona uma margem à esquerda de 100 pixels */
+    margin-top: 30px; /* Adiciona uma margem superior de 30 pixels */
+    width: 750px; /* Define a largura das imagens como 750 pixels */
+}
+
+/* Estilo da seção 04 */
+.section-04 {
+    background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%), url(img/img\ cofre\ fundo.jpg); /* Aplica um gradiente linear e uma imagem de fundo */
+    background-position:center; /* Alinha o fundo ao centro */
+    background-attachment:ixed; /* Faz o fundo permanecer fixo enquanto a página rola */
+    padding:200px; /* Adiciona um espaçamento interno de 200 pixels em todos os lados */
+    display:flex; /* Define um layout flexível para os filhos da seção */
+    align-items:center; /* Alinha os itens ao centro verticalmente */
+    justify-content:space-evenly; /* Distribui o espaço entre os itens de forma uniforme */
+}
+
+/* Estilo das imagens na seção 04 */
+.section-04 .img-section04 img {
+    width: 300px; /* Define a largura das imagens como 300 pixels */
+    margin-left: 20px; /* Adiciona uma margem à esquerda de 20 pixels */
+    margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+    height: auto; /* Define a altura das imagens como automática para manter a proporção */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+}
+
+/* Estilo dos títulos h2 na seção 04 */
+.section-04 h2 {
+    color: white; /* Define a cor do texto como branco */
+    font-size: 30px; /* Define o tamanho da fonte como 30 pixels */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo do contêiner de dados na seção 04 */
+.dados-section04 {
+    background-color: rgba(0, 0, 0, 0.205); /* Define a cor de fundo com opacidade */
+    border-radius: 35px; /* Adiciona bordas arredondadas com raio de 35 pixels */
+    padding: 30px; /* Adiciona um espaçamento interno de 30 pixels */
+}
+
+/* Estilo dos parágrafos na seção 04 */
+.section-04 p {
+    color: white; /* Define a cor do texto como branco */
+    font-size: 17px; /* Define o tamanho da fonte como 17 pixels */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 30px; /* Adiciona uma margem superior de 30 pixels */
+}
+
+/* Estilo dos spans dentro de divs na seção 04 */
+.section-04 div span {
+    color: yellow; /* Define a cor do texto como amarelo */
+}
+
+/* Estilo do rodapé */
+footer {
+    padding: 80px; /* Adiciona um espaçamento interno de 80 pixels em todos os lados */
+    background-color: rgb(29, 28, 28); /* Define a cor de fundo como um tom escuro */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo das imagens dentro do rodapé */
+footer img {
+    width: 250px; /* Define a largura das imagens como 250 pixels */
+    height: auto; /* Define a altura das imagens como automática para manter a proporção */
+    margin-top: 5px; /* Adiciona uma margem superior de 5 pixels */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels */
+}
+
+/* Estilo dos itens dentro da div do rodapé */
+.footer-div {
+    display: flex; /* Define um layout flexível para os itens */
+    justify-content: space-between; /* Distribui o espaço entre os itens de forma uniforme */
+    margin: 20px 0px; /* Adiciona uma margem superior e inferior de 20 pixels */
+}
+
+/* Estilo dos links dentro da div do rodapé */
+.footer-div a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Define a cor do texto dos links como branco */
+    font-size: 15px; /* Define o tamanho da fonte dos links como 15 pixels */
+}
+
+/* Estilo dos parágrafos dentro da div do rodapé */
+.footer-div p {
+    color: rgba(233, 222, 222, 0.523); /* Define a cor do texto com opacidade */
+    font-size: 15px; /* Define o tamanho da fonte como 15 pixels */
+}
+
+/* Estilo dos links dentro da div do rodapé quando sobrevoados */
+.footer-div a:hover {
+    color: crimson; /* Muda a cor do texto para vermelho quando sobrevoado */
+    transition: 0.8s; /* Adiciona uma transição suave de 0,8 segundos para a mudança de estilo */
 }
