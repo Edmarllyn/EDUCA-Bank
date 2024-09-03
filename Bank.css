@@ -170,7 +170,7 @@ header nav ul li a {
     cursor: pointer; /* Muda o cursor para uma mão quando o botão é sobrevoado */
 }
 
-/* Estilo de uma linha centralizada */
+/* Estilo da linha  */
 .line {
     margin: 0 auto; /* Centraliza a linha horizontalmente */
     width: 70%; /* Define a largura da linha como 70% do contêiner pai */
@@ -270,3 +270,4 @@ footer img {
     color: crimson; /* Muda a cor do texto para vermelho quando sobrevoado */
     transition: 0.8s; /* Adiciona uma transição suave de 0,8 segundos para a mudança de estilo */
 }
+
