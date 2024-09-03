@@ -46,7 +46,7 @@ header nav ul li a {
 .section-01 {
     background: linear-gradient(180deg, #c0cdcf 8.33%, rgba(90, 168, 168) 100%); /* Aplica um gradiente linear como fundo */
     padding: 200px; /* Adiciona um espaçamento interno de 200 pixels em todos os lados */
-    background-repeat: no-repeat; /* Garante que o fundo não se repita */
+
     background-size: cover; /* Faz o fundo cobrir completamente a área da seção */
 }
 
@@ -144,7 +144,7 @@ header nav ul li a {
 .section-03 p {
     font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
     margin-top: 30px; /* Adiciona uma margem superior de 30 pixels */
-    color: rgba(0, 0, 0, 0.564); /* Define a cor do texto com opacidade */
+    color: rgb(0, 0, 0); /* Define a cor do texto com opacidade */
     text-align: justify; /* Justifica o texto */
 }
 
@@ -224,7 +224,7 @@ header nav ul li a {
     color: white; /* Define a cor do texto como branco */
     font-size: 17px; /* Define o tamanho da fonte como 17 pixels */
     text-align: center; /* Alinha o texto ao centro */
-    margin-top: 30px; /* Adiciona uma margem superior de 30 pixels */
+    margin-top: 30px;/* Adiciona uma margem superior de 30 pixels */
 }
 
 /* Estilo dos spans dentro de divs na seção 04 */
