@@ -1,17 +1,47 @@
+
+
 .flex-conteiner{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: darkblue;
+    justify-content: center; /* justificando o conteudo ao centro */
+    align-items: center;/* alinha os itens ao centro vertical*/
+    gap: 10px;/*propiedade utilizada para dar respiro/espaço entre os elementos*/
+    background-color: black;  /* cor de fundo da sessão*/
+    padding: 150px; /* preenchimento da sessão*/
+
 }
 
 .flex-conteiner div{
-    background-color: white;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-
+    background-color: rgb(255, 5, 5); /* cor de fundo da div*/
+    width: 200px;/*largura da caixa*/
+    height: 300px;
+    margin: 50px;/*altura da caixa*/
+    padding: 40px;/*preenchimento da caixa*/
+    box-shadow: 3px 3px 20px white; /*sombra externa da caixa primeiro valor eixo horizontal, segundo valor
+     eixo na vertical, ultimo valor exposição da sombra, os 2 primeiors valores podemos negativar para mudar 
+     o angulo da sombra*/
+     border-radius: 25px;
 }
 
+.flex-conteiner div:hover{
+/* transform: translate(0px, 20px); primeiro valor eixo x (horizontal), proximo valor do eixo y (vertical) */
+box-shadow: 3px 3px 20px rgb(1, 255, 170); /*sombra externa da caixa primeiro valor eixo horizontal, segundo valor
+     eixo na vertical, ultimo valor exposição da sombra, os 2 primeiors valores podemos negativar para mudar 
+     o angulo da sombra*/
+     transition: 0.7s;
+      /*transform: rotate(5deg);*/ /*aqui trabalhamos com a toração da caixa*/
+     /*transform: scale(1.5, 1.5);*/ /*trabalha com a escala de movimentação dos eixos X e Y*/
+     transform: skew(-5deg, 5deg);
+}
+
+
+
+header{
+    padding: 50px;
+    background-color: rgb(255, 0, 0);
+}
+
+
+footer {
+    background-color: rgb(255, 0, 0);
+    padding: 50px;
+}
